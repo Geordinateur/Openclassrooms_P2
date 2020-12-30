@@ -1,0 +1,79 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  --blue: #0065FC;
+  --bluelight: #DEEBFF;
+  --grey: #F2F2F2;
+  margin: 0;
+  padding: 0;
+}
+
+h1, p, a {
+  margin: 10px 0;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.3em 2em;
+}
+
+.navbar {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3em;
+  color: var(--blue);
+  width:100%;
+}
+
+.navbar a {
+  padding: 10px;
+  padding: 60px 60px;
+  margin: 0 10px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  text-decoration: none;
+  display: inline;
+  margin: 10px;
+  padding: 50px 0;
+}
+
+.logo {
+  justify-content: flex-start;
+  width: 135px;
+  height: 60px;
+}
+
+.accommodation {
+  align-self: flex-end;
+  order: 1;
+}
+.activities {
+  align-self: flex-end;
+  order: 2;
+}
+
+.signup {
+  align-self: flex-end;
+  order: 3;
+}
+
+li>.active {
+  border-top: 2px solid var(--blue);
+}
+
+
