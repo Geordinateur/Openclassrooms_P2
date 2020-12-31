@@ -45,43 +45,41 @@ header p {
   justify-content: space-between;
   align-items: center;
   font-size: 1.3em;
-  width:100%;
   color: var(--black);
-}
-
-.navbar a {
-  color: var(--black);
-  padding: 100px;
+  height: 170px;
+  padding: 0;
+  margin: 0;
 }
 
 .navbar ul {
+  list-style: none;
 }
 
 .navbar li {
   display: inline;
-  padding: 90px;
 }
 
-.logo {
+.navbar a {
+  padding: 70px;
+}
+
+.navbar .logo {
   width: 135px;
   height: 60px;
-  background: orange;
 }
 
-.accommodation {
+.navbar .accommodation {
   order: 1;
-  background: grey;
 }
-.activities {
+.navbar .activities {
   order: 2;
-  background: purple;
 }
 
-.signup {
+.navbar .signup {
   order: 3;
 }
 
-li .active {
+.navbar li .active {
   border-top: 2px solid var(--blue);
 }
 
