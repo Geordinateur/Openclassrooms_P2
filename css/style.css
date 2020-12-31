@@ -7,7 +7,7 @@ body {
   --black: #000000;
   margin: 0;
   padding: 0;
-  margin: 0.3em 2em;
+  margin: 0em 2em;
 }
 
 h1, h2, p, a {
@@ -42,17 +42,19 @@ header p {
 
 .navbar {
   display:flex;
-  justify-content: space-between;
   align-items: center;
   font-size: 1.3em;
   color: var(--black);
-  height: 170px;
   padding: 0;
   margin: 0;
 }
 
 .navbar ul {
   list-style: none;
+  background: red;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .navbar li {
@@ -60,27 +62,30 @@ header p {
 }
 
 .navbar a {
-  padding: 70px;
+  padding: 2.9em;
+}
+
+.navbar a.active {
+  border-top: 2px solid var(--blue);
 }
 
 .navbar .logo {
   width: 135px;
   height: 60px;
+  padding: 2em 0;
 }
 
 .navbar .accommodation {
-  order: 1;
 }
+
 .navbar .activities {
-  order: 2;
 }
 
 .navbar .signup {
-  order: 3;
 }
 
-.navbar li .active {
-  border-top: 2px solid var(--blue);
+.navbar .space {
+  flex-grow: 4;
 }
 
 .container {
