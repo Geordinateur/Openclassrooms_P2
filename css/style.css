@@ -11,7 +11,7 @@ body {
 
 h1, h2, p, a {
   margin: 0em 0;
-  padding: 0px;
+  padding: 0em;
   text-decoration: none;
 }
 
@@ -39,8 +39,6 @@ header p {
   align-items: center;
   font-size: 1.3em;
   color: var(--black);
-  padding: 0;
-  margin: 0;
 }
 
 .navbar a {
@@ -57,20 +55,8 @@ header p {
   padding: 2em 0;
 }
 
-.navbar .accommodation {
-}
-
-.navbar .activities {
-}
-
-.navbar .signup {
-}
-
 .navbar .space {
   flex-grow: 4;
-}
-
-.container {
 }
 
 .search {
@@ -115,7 +101,7 @@ header p {
 }
 
 .filters ul h2 {
-  margin-right: 20px;
+  margin-right: 1.5em;
 }
 
 .filters-list {
@@ -123,8 +109,7 @@ header p {
   list-style: none;
   align-items: center;
   padding: 0;
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0;
   flex-wrap: wrap;
 }
 
@@ -150,17 +135,18 @@ header p {
 
 div.info { 
   display: flex;
+  margin: 1.0em 0;
 }
 
 .info .fa-info {
   color: var(--blue);
-  border: 1px solid var(--grey);
-  border-radius: 150px;
-  padding: 10px;
-  width: 15px;
-  height: 15px;
+  border: 0.1em solid var(--grey);
+  border-radius: 1.0em;
+  padding: 0.5em;
+  width: 1.0em;
+  height: 1.0em;
   text-align: center;
-  margin-right: 15px;
+  margin-right: 1.0em;
   flex-shrink: 0;
 }
 
@@ -188,5 +174,5 @@ aside>ul {
   background: var(--grey);
   padding: 30px 50px;
   border-radius: 50px;
-  margin: 40px 0;
+  margin: 0 0;
 }
