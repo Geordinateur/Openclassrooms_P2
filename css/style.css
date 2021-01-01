@@ -147,12 +147,12 @@ header p {
   text-align: center;
 }
 
-div.info { 
+.filters .info { 
   display: flex;
   margin: 1.0em 0;
 }
 
-.info .fa-info {
+.filters .fa-info {
   color: var(--blue);
   border: 0.1em solid var(--grey);
   border-radius: 1.0em;
@@ -164,7 +164,7 @@ div.info {
   flex-shrink: 0;
 }
 
-.info p {
+.filters .info p {
   align-self: center;
 }
 
@@ -182,7 +182,7 @@ div.info {
   padding: 3.0em 3.0em;
 }
 
-aside.item {
+aside {
   width: 30.0em;
 }
 
