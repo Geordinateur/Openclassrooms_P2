@@ -1,12 +1,13 @@
 body {
   font-family: 'Raleway', sans-serif;
+  font-size: 1.0em;
   --blue: #0065FC;
   --bluelight: #DEEBFF;
   --grey: #F2F2F2;
   --white: #FFFFFF;
   --black: #000000;
-  padding: 0.1em 0;
-  margin: 0em 2em;
+  padding: 0.1em 0 0 0;
+  margin: 0em 3em;
 }
 
 h1, h2, h3, p, a {
@@ -242,6 +243,7 @@ section.accommodation {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  padding-bottom: 1.0em;
 
 }
 .accommodation li {
@@ -254,7 +256,7 @@ section.accommodation {
 
 .accommodation img {
   height: 10.0em;
-  width: 20.0em;
+  width: 19.2em;
   border-radius: 1.0em 1.0em 0 0;
   margin-bottom: 0.3em;
 }
@@ -276,7 +278,6 @@ section.activities {
 
 .activities h2 {
   padding: 1.0em 0 2.0em 0; 
-  background: orange;
   width: 100%;
 }
 
@@ -285,11 +286,12 @@ section.activities {
   margin: 0;
   border-radius: 2.0em;
   box-shadow: 0.0em 0.0em 1.0em rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.0em;
 }
 
 .activities img {
   border-radius: 2.0em 2.0em 0 0;
-  width: 30.0em;
+  width: 26.0em;
 }
 
 .activities figcaption {
@@ -320,6 +322,12 @@ section.activities {
   height: 10.0em;
 }
 
+.activities div {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
 .activities .vieux-port {
   background-image: url("../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
   font-weight: bold;
@@ -329,3 +337,25 @@ section.activities {
   width: 10.0em;
 }
 
+footer {
+  background: var(--grey);
+  display: flex;
+  margin: 0 -2.5em 0 -3.0em;
+  padding: 1.0em 0 3.0em 3.0em;
+  font-size: 1.2em;
+  flex-wrap: wrap;
+}
+
+footer h3 {
+  padding-top: 2.0em;
+  padding-bottom: 0.5em;
+}
+
+footer ul {
+  margin-right: 20.0em;
+  flex-shrink: 0;
+}
+
+footer li {
+  margin: 1.0em 0;
+}
