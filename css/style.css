@@ -25,7 +25,7 @@ ul {
 main {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 aside {
@@ -33,8 +33,18 @@ aside {
 }
 
 section {
-  order: 1;
   padding: 0 0 1.0em 0;
+}
+
+section.accommodation {
+  order: 1;
+  min-width: 60.0em;
+  flex: 1;
+}
+
+section.activities {
+  order: 3;
+  align-self: flex-start;
 }
 
 header p {
@@ -177,13 +187,13 @@ header p {
 }
 
 .item {
-  background: var(--grey);
-  border-radius: 1.5em;
-  padding: 3.0em 3.0em;
 }
 
 aside {
   width: 30.0em;
+  background: var(--grey);
+  border-radius: 1.5em;
+  padding: 3.0em 3.0em;
 }
 
 aside .fa-chart-line {
@@ -194,13 +204,13 @@ aside .fa-chart-line {
 aside li {
   display: flex;
   padding: 0.5em;
-  margin-top: 3.0em;
+  margin-top: 2.0em;
   box-shadow: 0.0em 0.0em 1.0em rgba(0, 0, 0, 0.1);
   border-radius: 1.5em;
   background: var(--white);
 }
 
-aside .chart-line {
+aside div.chart-line {
   display: flex;
   flex-flow: column wrap;
   padding: 1.0em;
@@ -222,6 +232,100 @@ aside .fa-star-chart-line {
 }
 
 section.accommodation {
-  flex-grow: 5;
   margin: 0 3.0em 0 0;
+  background: var(--grey);
+  border-radius: 1.5em;
+  padding: 3.0em 3.0em;
 }
+
+.accommodation ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+}
+.accommodation li {
+  background: white;
+  padding: 0.5em;
+  border-radius: 1.5em;
+  box-shadow: 0.0em 0.0em 1.0em rgba(0, 0, 0, 0.1);
+  margin: 2.0em 0;
+}
+
+.accommodation img {
+  height: 10.0em;
+  width: 20.0em;
+  border-radius: 1.0em 1.0em 0 0;
+  margin-bottom: 0.3em;
+}
+
+.accommodation li h3, .accommodation li p, .accommodation li p+i {
+  margin-left: 0.5em;
+  margin-bottom: 0.3em;
+}
+
+section.activities {
+  margin: 3.0em 0 3.0em 0;
+  background: var(--white);
+  border-radius: 1.5em;
+  padding: 0.0em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.activities h2 {
+  padding: 1.0em 0 2.0em 0; 
+  background: orange;
+  width: 100%;
+}
+
+.activities figure {
+  padding: 0;
+  margin: 0;
+  border-radius: 2.0em;
+  box-shadow: 0.0em 0.0em 1.0em rgba(0, 0, 0, 0.1);
+}
+
+.activities img {
+  border-radius: 2.0em 2.0em 0 0;
+  width: 30.0em;
+}
+
+.activities figcaption {
+  font-weight: bold;
+  padding: 1.5em;
+}
+
+.activities .img1 {
+  height: 35.0em;
+}
+
+.activities .img1 img {
+  height: 30.0em;
+}
+
+.activities .img2 {
+  height: 15.0em;
+}
+
+.activities .img2 img {
+  height: 10.0em;
+}
+.activities .img3 {
+  height: 15.0em;
+}
+
+.activities .img3 img {
+  height: 10.0em;
+}
+
+.activities .vieux-port {
+  background-image: url("../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+  font-weight: bold;
+  border-radius: 2.0em;
+  box-shadow: 0.0em 0.0em 1.0em rgba(0, 0, 0, 0.1);
+  height: 10.0em;
+  width: 10.0em;
+}
+
