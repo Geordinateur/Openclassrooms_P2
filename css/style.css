@@ -133,6 +133,10 @@ header p {
   margin: 10px 15px;
 }
 
+.filters-list li:hover {
+  background: var(--grey);
+}
+
 .filters-list i {
   color: var(--blue);
   border: 2px solid var(--bluelight);
@@ -221,6 +225,7 @@ section.accommodation {
   flex: 1;
   margin: 0 3.0em 0 0;
   padding: 3.0em 3.0em;
+  margin-bottom: 0;
   background: var(--grey);
   border-radius: 1.5em;
   display:flex;
@@ -230,11 +235,13 @@ section.accommodation {
 
 .accommodation h2 {
   width: 100%;
+  padding-bottom: 0.3em;
 }
 
-.accommodation div {
+.accommodation div, a.accommodation {
   background: var(--white);
   padding: 0.5em;
+  padding-bottom: 1.0em;
   border-radius: 1.5em;
   box-shadow: 0.0em 0.0em 1.0em rgba(0, 0, 0, 0.1);
   margin: 1.5em 0;
@@ -242,7 +249,7 @@ section.accommodation {
 }
 
 .accommodation h3, .accommodation p, .accommodation>i:nth-child(4) {
-  padding: 0.2em 0 0 1.0em;
+  padding: 5px 0 0 10px;
 }
 
 .accommodation ul {
@@ -262,7 +269,7 @@ section.accommodation {
 
 .accommodation img {
   height: 10.0em;
-  width: 19.0em;
+  width: 19.9em;
   border-radius: 1.0em 1.0em 0 0;
   margin-bottom: 0.3em;
 }
@@ -281,7 +288,8 @@ section.accommodation>strong:last-child {
 section.activities {
   order: 3;
   align-self: flex-start;
-  margin: 3.0em 0 3.0em 0;
+  margin: 0 0 3.0em 0;
+  padding-top: 3.0em;
   background: var(--white);
   display: flex;
   flex-wrap: wrap;
