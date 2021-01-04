@@ -11,7 +11,7 @@ body {
 }
 
 h1, h2, h3, p, a {
-  margin: 0em 0;
+  margin: 0em 0em;
   padding: 0em;
   text-decoration: none;
   color: var(--black);
@@ -29,23 +29,8 @@ main {
   flex-flow: row wrap;
 }
 
-aside {
-  order: 2;
-}
-
 section {
   padding: 0 0 1.0em 0;
-}
-
-section.accommodation {
-  order: 1;
-  min-width: 60.0em;
-  flex: 1;
-}
-
-section.activities {
-  order: 3;
-  align-self: flex-start;
 }
 
 header p {
@@ -121,6 +106,7 @@ header p {
   display: none;
 }
 
+
 .filters {
   width: 100%;
 }
@@ -187,10 +173,8 @@ header p {
   color: var(--grey);
 }
 
-.item {
-}
-
 aside {
+  order: 2;
   width: 30.0em;
   background: var(--grey);
   border-radius: 1.5em;
@@ -233,10 +217,32 @@ aside .fa-star-chart-line {
 }
 
 section.accommodation {
+  order: 1;
+  flex: 1;
   margin: 0 3.0em 0 0;
+  padding: 3.0em 3.0em;
   background: var(--grey);
   border-radius: 1.5em;
-  padding: 3.0em 3.0em;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.accommodation h2 {
+  width: 100%;
+}
+
+.accommodation div {
+  background: var(--white);
+  padding: 0.5em;
+  border-radius: 1.5em;
+  box-shadow: 0.0em 0.0em 1.0em rgba(0, 0, 0, 0.1);
+  margin: 1.5em 0;
+  flex-shrink: 1;
+}
+
+.accommodation h3, .accommodation p, .accommodation>i:nth-child(4) {
+  padding: 0.2em 0 0 1.0em;
 }
 
 .accommodation ul {
@@ -256,7 +262,7 @@ section.accommodation {
 
 .accommodation img {
   height: 10.0em;
-  width: 19.2em;
+  width: 19.0em;
   border-radius: 1.0em 1.0em 0 0;
   margin-bottom: 0.3em;
 }
@@ -264,13 +270,19 @@ section.accommodation {
 .accommodation li h3, .accommodation li p, .accommodation li p+i {
   margin-left: 0.5em;
   margin-bottom: 0.3em;
+  background: purple;
+}
+
+section.accommodation>strong:last-child {
+  width: 100%;
+  padding-top: 1.5em;
 }
 
 section.activities {
+  order: 3;
+  align-self: flex-start;
   margin: 3.0em 0 3.0em 0;
   background: var(--white);
-  border-radius: 1.5em;
-  padding: 0.0em;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
