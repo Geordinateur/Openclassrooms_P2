@@ -9,6 +9,7 @@
     <!-- mes feuilles de styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" media="screen and (max-width: 1280px)" href="css/min-style.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1460px)" href="css/max-style.css" />
     <!--police Raleway google-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet"> 
@@ -16,40 +17,41 @@
     <title>Reservia - Trouvez votre hébergement pour des vacances de rêve</title>
   </head>
   <body>
-    <!-- le menu de navigation: j'aurai aimer le faire en list, mais le responsive c'est mort .... -->
+    <!-- le menu de navigation: j'aurai aimer le faire en list, mais le responsive c'est mort et je n'arrive pas a le mettre dans le header -->
     <nav class="navbar">
       <img class="logo" src="images/logo/Reservia@3x.png" alt="Logo Reservia">
       <span class="space"></span>
-      <a class="accommodation active" href="#accommodations">Hébergements</a>
-      <a class="activities" href="#activities">Activités</a>
-      <a class="signup" href="#"><strong>S'inscrire</strong></a>
+      <a class="navbar-accommodations active" href="#accommodations">Hébergements</a>
+      <a class="navbar-activities" href="#activities">Activités</a>
+      <a class="navbar-signup" href="#"><strong>S'inscrire</strong></a>
     </nav>
     <!-- le header: titre et formulaire de recherche -->
     <header>
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
       <p>En plein centre ville ou en pleine nature</p>
-      <form class="search">
+      <form action="" method="post" class="search">
         <i class="fas fa-map-marker-alt"></i>
         <input type="text" value="Marseille, France" class="txt">
-        <input type="button" value="Rechercher" class="btn">
-        <button class="btn i"><i class="fas fa-search"></i></button>
+        <button type="submit" class="btn">Rechercher</button>
+        <button type="submit" class="btn i"><i class="fas fa-search"></i></button>
       </form>
     </header>
-    <main class="container" role="main">
-      <!-- une section : pour filtrer l'affichage du contenu et + une info (il aurai peut-etre été plus judicieu de le mettre dans le header??) -->
-      <section class="filters">
+    <main class="container">
+      <!-- une naviguation : pour filtrer l'affichage du contenu -->
+      <nav class="filters">
+        <h2>Filtres</h2>
         <ul class="filters-list">
-          <h2>Filtres</h2>
           <li><i class="fas fa-money-bill-wave"></i><strong>Économique</strong></li>
           <li><i class="fas fa-child"></i><strong>Familial</strong></li>
           <li><i class="fas fa-heart"></i><strong>Romantique</strong></li>
           <li><i class="fas fa-dog"></i><strong>Animaux autorisés</strong></li>
         </ul>
-        <div class="info">
-          <i class="fas fa-info"></i>
-          <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        </div>
-      </section>
+      </nav>
+      <!-- une petite info sur le filtrage -->
+      <div class="info">
+        <i class="fas fa-info"></i>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+      </div>
       <!-- aside: les plus populaires -->
       <aside class="item">
         <i class="fas fa-chart-line"></i><h2>Les plus populaires</h2>
@@ -80,36 +82,36 @@
           </li>
         </ul>
       </aside>
-      <!-- 2eme section: hébergement à marseille ou autre -->
+      <!-- 1ere section: hébergement à marseille ou autre -->
       <section class="accommodation" id="accommodations">
         <h2>Hébergements à Marseille</h2>
-          <a class="accommodation" href="#">
-            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-            <h3>Auberge de la Cannebière</h3><p>Nuit à partir de 25e</p><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star bad"></i>
-          </a>
-          <a href="#" class="accommodation">
-            <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
-            <h3>Hôtel du port</h3><p>Nuit à partir de 52e</p><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i>
-          </a>
-          <a href="#" class="accommodation">
-            <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
-            <h3>Hôtel Les mouettes</h3><p>Nuit à partir de 76e</p><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star bad"></i>
-          </a>
-          <a href="#" class="accommodation">
-            <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-            <h3>Hôtel de la mer</h3><p>Nuit à partir de 46e</p><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star bad"></i><i class="fas fa-star bad"></i>
-          </a>
-          <a href="#" class="accommodation">
-            <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
-            <h3>Auberge Le Panier</h3><p>Nuit à partir de 23e</p><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star bad"></i>
-          </a>
-          <a href="#" class="accommodation">
-            <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
-            <h3>Hôtel chez Amina</h3><p>Nuit à partir de 96e</p><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i>
-          </a>
+        <a class="accommodation" href="#">
+          <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Cannebière">
+          <h3>Auberge de la Cannebière</h3><p>Nuit à partir de 25e</p><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star bad"></i>
+        </a>
+        <a href="#" class="accommodation">
+          <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+          <h3>Hôtel du port</h3><p>Nuit à partir de 52e</p><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i>
+        </a>
+        <a href="#" class="accommodation">
+          <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
+          <h3>Hôtel Les mouettes</h3><p>Nuit à partir de 76e</p><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star bad"></i>
+        </a>
+        <a href="#" class="accommodation">
+          <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+          <h3>Hôtel de la mer</h3><p>Nuit à partir de 46e</p><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star bad"></i><i class="fas fa-star bad"></i>
+        </a>
+        <a href="#" class="accommodation">
+          <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
+          <h3>Auberge Le Panier</h3><p>Nuit à partir de 23e</p><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star bad"></i>
+        </a>
+        <a href="#" class="accommodation">
+          <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
+          <h3>Hôtel chez Amina</h3><p>Nuit à partir de 96e</p><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i><i class="fas fa-star good"></i>
+        </a>
         <strong><a href="#">Afficher plus</a></strong>
       </section>
-      <!-- 3eme section: activités à marseille ou autres -->
+      <!-- 2eme section: activités à marseille ou autres -->
       <section class="activities" id="activities">
         <h2>Activités à Marseille</h2>
         <figure class="img1">
@@ -122,26 +124,27 @@
             <figcaption>Fort de Pomègues</figcaption>
           </figure>
           <figure class="img3">
-            <img src="images/activites/4_small/" alt="">
-            <figcaption></figcaption>
+            <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
+            <figcaption>Îles du Frioul</figcaption>
           </figure>
         </div>
         <figure class="img1">
-          <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
-          <figcaption>Vieux Port</figcaption>
+          <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+          <figcaption>Parc National des Calanques</figcaption>
         </figure>
         <div class="activities row">
           <figure class="img2">
-            <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-            <figcaption>Fort de Pomègues</figcaption>
+            <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+            <figcaption>Notre-Dame-de-la-Garde</figcaption>
           </figure>
           <figure class="img3">
-            <img src="images/activites/4_small/" alt="">
-            <figcaption></figcaption>
+            <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+            <figcaption>Parc Longchamp</figcaption>
           </figure>
         </div>
       </section>
     </main>
+    <!-- commentaire inutile mais quand meme: LE FOOTER!! -->
     <footer>
       <ul><h3>A propos</h3>
         <li>Fonctionnement du site</li>
