@@ -1,0 +1,145 @@
+body {
+  font-size: 1em;
+  margin: 0;
+}
+
+header, main .filters {
+  margin: 0em 1.5em;
+}
+
+header h1 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 1.5em 0 0.5em 0;
+}
+
+header p {
+  padding-top: 0.0em;
+  font-size: 1.0em;
+}
+
+.navbar .logo {
+  padding: 0 0 0 1.5em;
+}
+
+.search .btn {
+  display: none;
+  border-radius: 1.0em;
+}
+
+.search .btn.i {
+  display: inline;
+  position: relative;
+  right: 1em;
+}
+
+.filters-list li {
+  margin: 1.0em 1.0em 0 0;
+}
+
+.info {
+  margin: 1.0em;
+  margin-bottom: 2.5em;
+  padding: 1.0em 0 0 1.5em;
+}
+
+aside {
+  order: 1;
+  width: 100%;
+  border-radius: 0;
+  padding: 3.0em 1.5em;
+}
+
+aside ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+aside h2 {
+  padding-bottom: 0.5em;
+}
+
+aside div.chart-line {
+  padding: 0.5em 0.5em;
+}
+
+aside li {
+  padding: 0.4em;
+  margin-top: 1.0em;
+  width: 48%;
+}
+
+aside img { 
+  width: 7.0em;
+  height: 7.0em;
+}
+
+section.accommodation {
+  background: var(--white);
+  flex: none;
+  flex-shrink: 1;
+  margin: 0;
+  padding: 0;
+  margin: 0.5em 1.5em; 
+}
+
+section.accommodation>strong:last-child {
+}
+
+.accommodation h2 {
+  margin: 1.5em 0 0.8em 0;
+}
+
+section a.accommodation {
+  width: 100%;
+  max-width: 20.0em;
+  margin: 0.7em 0;
+}
+
+.accommodation img {
+  width: 100%;
+}
+
+section.activities {
+  padding: 2em 1.5em 1em 1.5em;
+  margin-bottom: 1.0em;
+}
+
+.activities h2 {
+  padding-top: 0.0em;
+}
+
+.activities figure {
+  width: 48%;
+}
+
+.activities div {
+  margin: 0;
+  width: 100%;
+  flex-flow: row wrap;
+}
+
+.activities img, .activities .img1 img, .activities .img2 img, .activities .img3 img {
+  width: 100%;
+  height: 10.0em;
+}
+
+.activities .img1 .img2 .img3 {
+  width: 0;
+  height: 0;
+}
+
+.activities .img1 {
+  order: 1;
+}
+
+footer {
+  margin: 0;
+  font-size: 1.0em;
+  padding-left: 1.5em;
+}
+
+footer ul { 
+  margin-right: 9.0em;
+}

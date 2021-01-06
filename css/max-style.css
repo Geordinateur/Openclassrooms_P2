@@ -1,0 +1,40 @@
+body {
+}
+
+aside {
+  width: 30.0em;
+}
+
+aside img {
+  width: 10em;
+}
+
+section.accommodation {
+  justify-content: flex-start;
+  padding-right: 0;
+}
+
+section a.accommodation {
+  margin-right: 3.0em;
+}
+
+.accommodation img {
+  height: 9.0em;
+  width: 21.15em;
+}
+
+.activities img {
+  width: 26.0em;
+}
+
+.activities .img1 img {
+  height: 28.0em;
+}
+
+.activities .img2 img {
+  height: 12.0em;
+}
+
+.activities .img3 img {
+  height: 10.0em;
+}
