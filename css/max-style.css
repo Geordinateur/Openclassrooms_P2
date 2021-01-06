@@ -38,3 +38,10 @@ section a.accommodation {
 .activities .img3 img {
   height: 10.0em;
 }
+
+footer {
+  justify-content: space-between;
+}
+footer ul {
+}
+
