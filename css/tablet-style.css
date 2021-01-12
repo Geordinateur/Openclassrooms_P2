@@ -92,9 +92,8 @@ section.accommodation>strong:last-child {
 }
 
 section a.accommodation {
-  width: 100%;
-  max-width: 20.0em;
-  margin: 0.7em 0;
+  width: 48%;
+  margin: 0.7em 0.0em;
 }
 
 .accommodation img {
@@ -140,6 +139,9 @@ footer {
   padding-left: 1.5em;
 }
 
-footer ul { 
-  margin-right: 9.0em;
+footer div { 
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
 }
